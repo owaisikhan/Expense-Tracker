@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Parent{
+    width: max-content;
+    height: 50vh;
+    font-size: 1.2em;    
+}
+.balance-container{
+    background-color: #fff;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.balance-container div{
+    /* float: left; */
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+}
+.balance-container div:nth-child(1){
+    border-right: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.balance-container div:nth-child(1) h5{
+    color: green;
+}
+.balance-container div:nth-child(2) h5{
+    color: red;
+}
+@media all and  (max-width: 500px ) {
+    .balance-container div{
+        display: block;
+    }
+    .balance-container div:nth-child(1){
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 0px 0px 5px 0px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.history-container{
+    clear: both;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.history-container h4{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-transc-container h4{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin: 0px 0px 10px 0px;
+}
+.add-transc-container input{
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 1em;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+.add-transc-container input[id=submit]{ 
+    background-color: #00aaff;
 }

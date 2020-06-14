@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import Header from './Components/Header'
+import Balance from './Components/Balance'
+import InOut from './Components/InOut'
+import History from './Components/History'
+import AddTransaction from './Components/AddTransaction'
 
-function App() {
-  return (
+function App(){
+  let [count,setCount] = useState(0);
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Parent">
+        <Header/>
+        <Balance/>
+        <br/>
+        <InOut/>
+        <History/>
+        <AddTransaction f={()=>setCount(++count)}/>
+       <h4>value of counter is {count}</h4>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
