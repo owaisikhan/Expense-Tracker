@@ -11,7 +11,6 @@ import { GlobalStateProvider } from './context/GlobalState'
 function App() {
   return (
     <GlobalStateProvider>
-      <div className="App">
         <div className="Parent">
           <Header />
           <Balance />
@@ -20,7 +19,6 @@ function App() {
           <History />
           <AddTransaction />
         </div>
-      </div>
     </GlobalStateProvider>
   )
 }
