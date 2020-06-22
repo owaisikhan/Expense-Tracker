@@ -4,7 +4,7 @@ import { GlobalState } from '../context/GlobalState'
 
 
 function AddTranscation() {
-    const { state, addTransaction } = useContext(GlobalState)
+    const { addTransaction } = useContext(GlobalState)
     let [transactionTitle, setTransactionTitle] = useState('');
     let [amount, setAmount] = useState(0);
 

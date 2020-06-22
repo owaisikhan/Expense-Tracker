@@ -1,4 +1,4 @@
-import React, { useContext, createContext } from 'react'
+import React, { useContext } from 'react'
 import '../App.css'
 // Global transactions
 import {GlobalState} from '../context/GlobalState'
