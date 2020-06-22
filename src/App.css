@@ -66,6 +66,38 @@ body{
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
+.history-container .list{
+    margin: 10px 0px 0px 0px;
+    list-style-type: none;
+}
+.history-container .list li{
+    margin: 0px 0px 5px 0px ;
+    background-color: #fff;
+    padding: 10px;
+}
+.history-container .list .plus span{
+    float: right;
+    color: green;
+}
+.history-container .list .plus{
+    border-right: 3px solid #00ff00;
+}
+.history-container .list .minus{
+    border-right: 3px solid #dd0000;
+}
+.history-container .delete-btn{
+    background-color: #dd0000;
+    float: left;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-left: -35px;
+}
+.history-container .list .minus span{
+    float: right;
+    color: red;
+}
 .add-transc-container h4{
     border-bottom: 1px solid black;
     padding-bottom: 5px;
